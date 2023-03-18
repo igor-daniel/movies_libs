@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -7,13 +7,12 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <h2>
-          <Link to="/">MoviesLib</Link>
-        </h2>
-        <Link to="/Movie/1">Movie</Link>
+        <h2><Link to="/">Home</Link></h2>
+
+        <Link to="/Movie/1">Movies</Link>
         <Link to="/search">Search</Link>
       </nav>
-      <h2>Movies lib</h2>
+      <p>Movies_lib</p>
       <Outlet />
     </div>
   )
