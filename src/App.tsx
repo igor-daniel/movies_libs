@@ -1,4 +1,7 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import { Navbar } from './Components/Navbar'
+
+import './index.css'
 
 
 function App() {
@@ -6,12 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-        <h2><Link to="/">Home</Link></h2>
+      <Navbar />
 
-        <Link to="/Movie/1">Movies</Link>
-        <Link to="/search">Search</Link>
-      </nav>
       <p>Movies_lib</p>
       <Outlet />
     </div>
